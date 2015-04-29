@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Engr.Maths
+namespace Engr.Maths.Vectors
 {
     public class Vect4
     {

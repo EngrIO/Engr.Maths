@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Engr.Maths
+namespace Engr.Maths.Vectors
 {
     namespace Engr.Maths
     {

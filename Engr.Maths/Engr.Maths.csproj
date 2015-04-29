@@ -39,10 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Vect3.cs" />
+    <Compile Include="Vectors\Swizzle.cs" />
+    <Compile Include="Vectors\Vect.cs" />
+    <Compile Include="Vectors\Vect2.cs" />
+    <Compile Include="Vectors\Vect2f.cs" />
+    <Compile Include="Vectors\Vect3.cs" />
     <Compile Include="MathsExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vect4.cs" />
+    <Compile Include="Vectors\Vect3f.cs" />
+    <Compile Include="Vectors\Vect4f.cs" />
+    <Compile Include="Vectors\Vect4.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
