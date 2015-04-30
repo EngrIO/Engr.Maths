@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
-using Engr.Maths.Vectors.Engr.Maths;
 
 namespace Engr.Maths.Vectors
 {
