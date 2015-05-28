@@ -91,7 +91,7 @@ namespace Engr.Maths.Vectors
         /// Returns a unit Vector
         /// </summary>
         /// <returns>Normalized Vector</returns>
-        public Vect3f Normalized()
+        public Vect3f Normalize()
         {
             var num = 1f / Length;
             return new Vect3f(X * num, Y * num, Z * num);

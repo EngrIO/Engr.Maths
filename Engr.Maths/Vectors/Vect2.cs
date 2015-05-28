@@ -76,7 +76,7 @@ namespace Engr.Maths.Vectors
         /// Returns a unit Vector
         /// </summary>
         /// <returns>Normalized Vector</returns>
-        public Vect2 Normalized()
+        public Vect2 Normalize()
         {
             var num = 1f / Length;
             return new Vect2(X * num, Y * num);

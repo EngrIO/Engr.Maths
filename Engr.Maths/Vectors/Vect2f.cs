@@ -80,7 +80,7 @@ namespace Engr.Maths.Vectors
         /// Returns a unit Vector
         /// </summary>
         /// <returns>Normalized Vector</returns>
-        public Vect2f Normalized()
+        public Vect2f Normalize()
         {
             var num = 1f / Length;
             return new Vect2f(X * num, Y * num);

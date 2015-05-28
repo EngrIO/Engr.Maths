@@ -36,7 +36,7 @@ namespace Engr.Maths.Vectors
             get { return X * X + Y * Y + Z * Z + W * W; }
         }
 
-        public Vect4 Normalized()
+        public Vect4 Normalize()
         {
             var num = 1f / Length;
             return new Vect4(X * num, Y * num, Z * num, W * num);
