@@ -38,4 +38,40 @@ namespace Engr.Maths.Vectors
             }
         }
     }
+
+    public class Vectf
+    {
+        private readonly float[] _components;
+
+        public Vectf(params float[] components)
+        {
+            _components = components;
+        }
+
+        public float this[int index]
+        {
+            get
+            {
+                return _components[index];
+            }
+        }
+
+        /// <summary>
+        /// Calculate the length
+        /// </summary>
+        public float Length
+        {
+            get { return (float) Math.Sqrt(LengthSquared); }
+        }
+        /// <summary>
+        /// Calculate the square of the length
+        /// </summary>
+        public float LengthSquared
+        {
+            get
+            {
+                return _components.Sum(d => d * d);
+            }
+        }
+    }
 }

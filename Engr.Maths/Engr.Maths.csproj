@@ -39,6 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Matrices\Mat4f.cs" />
+    <Compile Include="Matrices\Mat4.cs" />
+    <Compile Include="Rotation\Angle.cs" />
+    <Compile Include="Trigonometry\Trig.cs" />
     <Compile Include="Vectors\Swizzle.cs" />
     <Compile Include="Vectors\Vect.cs" />
     <Compile Include="Vectors\Vect2.cs" />
