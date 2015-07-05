@@ -5,6 +5,11 @@ namespace Engr.Maths
 {
     public static class MathsExtensions
     {
+        public static double Map(this double x, double inMin, double inMax, double outMin, double outMax)
+        {
+            return (x - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+        }
+
         public static bool NearlyEquals(this Double x, Double y, Double epsilon = 0.0000001)
         {
             return Math.Abs(x - y) <= Math.Abs(x * .00001);
