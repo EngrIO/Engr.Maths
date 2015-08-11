@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Engr.Maths.Vectors;
 
 namespace Engr.Maths
@@ -91,6 +92,49 @@ namespace Engr.Maths
             s.Add('Z', v.Z);
             s.Add('W', v.W);
             return s;
+        }
+
+
+        public static double Max(double x, double y)
+        {
+            return Math.Max(x, y);
+        }
+
+        public static double Max(double x, double y, double z)
+        {
+            return Math.Max(x, Math.Max(y, z));
+        }
+
+        public static double Max(double w, double x, double y, double z)
+        {
+            return Math.Max(w, Math.Max(x, Math.Max(y, z)));
+        }
+
+        public static double Max(params double[] values)
+        {
+            return values.Max();
+        }
+
+
+
+        public static double Min(double x, double y)
+        {
+            return Math.Max(x, y);
+        }
+
+        public static double Min(double x, double y, double z)
+        {
+            return Math.Min(x, Math.Min(y, z));
+        }
+
+        public static double Min(double w, double x, double y, double z)
+        {
+            return Math.Min(w, Math.Min(x, Math.Min(y, z)));
+        }
+
+        public static double Min(params double[] values)
+        {
+            return Enumerable.Min(values);
         }
     }
 }
