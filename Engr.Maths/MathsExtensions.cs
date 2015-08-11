@@ -19,6 +19,26 @@ namespace Engr.Maths
             return Math.Abs(x - y) <= Math.Abs(x * .00001);
         }
 
+        public static bool NearlyLessThanOrEquals(Double x, Double y, Double epsilon = 0.0000001)
+        {
+            return x <= y || x.NearlyEquals(y, epsilon);
+        }
+
+        public static bool NearlyGreaterThanOrEquals(Double x, Double y, Double epsilon = 0.0000001)
+        {
+            return x >= y || x.NearlyEquals(y, epsilon);
+        }
+
+        public static bool NearlyLessThanOrEquals(float x, float y, float epsilon = 0.0000001f)
+        {
+            return x <= y || x.NearlyEquals(y, epsilon);
+        }
+
+        public static bool NearlyGreaterThanOrEquals(float x, float y, float epsilon = 0.0000001f)
+        {
+            return x >= y || x.NearlyEquals(y, epsilon);
+        }
+
         public static dynamic Swizzle(this Vect2 v)
         {
             var s = new Swizzle<double>();
